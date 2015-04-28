@@ -14,13 +14,13 @@
 		2CA0F81A1AF0305200228E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0F8191AF0305200228E2B /* main.m */; };
 		2CA0F81E1AF0305200228E2B /* GMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0F81D1AF0305200228E2B /* GMAppDelegate.m */; };
 		2CA0F8211AF0305200228E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0F81F1AF0305200228E2B /* Main.storyboard */; };
-		2CA0F8241AF0305200228E2B /* GMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0F8231AF0305200228E2B /* GMViewController.m */; };
 		2CA0F8261AF0305200228E2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0F8251AF0305200228E2B /* Images.xcassets */; };
 		2CA0F82D1AF0305200228E2B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA0F82C1AF0305200228E2B /* XCTest.framework */; };
 		2CA0F82E1AF0305200228E2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA0F80D1AF0305200228E2B /* Foundation.framework */; };
 		2CA0F82F1AF0305200228E2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA0F8111AF0305200228E2B /* UIKit.framework */; };
 		2CA0F8371AF0305200228E2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0F8351AF0305200228E2B /* InfoPlist.strings */; };
 		2CA0F8391AF0305200228E2B /* Out_of_this_WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0F8381AF0305200228E2B /* Out_of_this_WorldTests.m */; };
+		2CA0F8471AF0325800228E2B /* GMOuterSpaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0F8461AF0325800228E2B /* GMOuterSpaceTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		2CA0F81C1AF0305200228E2B /* GMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMAppDelegate.h; sourceTree = "<group>"; };
 		2CA0F81D1AF0305200228E2B /* GMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMAppDelegate.m; sourceTree = "<group>"; };
 		2CA0F8201AF0305200228E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2CA0F8221AF0305200228E2B /* GMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMViewController.h; sourceTree = "<group>"; };
-		2CA0F8231AF0305200228E2B /* GMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMViewController.m; sourceTree = "<group>"; };
 		2CA0F8251AF0305200228E2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2CA0F82B1AF0305200228E2B /* Out of this WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Out of this WorldTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA0F82C1AF0305200228E2B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2CA0F8341AF0305200228E2B /* Out of this WorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Out of this WorldTests-Info.plist"; sourceTree = "<group>"; };
 		2CA0F8361AF0305200228E2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CA0F8381AF0305200228E2B /* Out_of_this_WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Out_of_this_WorldTests.m; sourceTree = "<group>"; };
+		2CA0F8451AF0325800228E2B /* GMOuterSpaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMOuterSpaceTableViewController.h; path = ../GMOuterSpaceTableViewController.h; sourceTree = "<group>"; };
+		2CA0F8461AF0325800228E2B /* GMOuterSpaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMOuterSpaceTableViewController.m; path = ../GMOuterSpaceTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +114,9 @@
 			children = (
 				2CA0F81C1AF0305200228E2B /* GMAppDelegate.h */,
 				2CA0F81D1AF0305200228E2B /* GMAppDelegate.m */,
+				2CA0F8451AF0325800228E2B /* GMOuterSpaceTableViewController.h */,
+				2CA0F8461AF0325800228E2B /* GMOuterSpaceTableViewController.m */,
 				2CA0F81F1AF0305200228E2B /* Main.storyboard */,
-				2CA0F8221AF0305200228E2B /* GMViewController.h */,
-				2CA0F8231AF0305200228E2B /* GMViewController.m */,
 				2CA0F8251AF0305200228E2B /* Images.xcassets */,
 				2CA0F8141AF0305200228E2B /* Supporting Files */,
 			);
@@ -251,8 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA0F81E1AF0305200228E2B /* GMAppDelegate.m in Sources */,
-				2CA0F8241AF0305200228E2B /* GMViewController.m in Sources */,
 				2CA0F81A1AF0305200228E2B /* main.m in Sources */,
+				2CA0F8471AF0325800228E2B /* GMOuterSpaceTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  GMViewController.h
+//  GMOuterSpaceTableViewController.h
 //  Out of this World
 //
 //  Created by ED on 4/28/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GMViewController : UIViewController
+@interface GMOuterSpaceTableViewController : UITableViewController
 
 @end
