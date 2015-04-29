@@ -18,6 +18,7 @@
 		2C6F87C51AF181CD0055E8DF /* Uranus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87BB1AF181CD0055E8DF /* Uranus.jpg */; };
 		2C6F87C61AF181CD0055E8DF /* Venus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87BC1AF181CD0055E8DF /* Venus.jpg */; };
 		2C6F87C91AF181E10055E8DF /* GMSpaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F87C81AF181E10055E8DF /* GMSpaceObject.m */; };
+		2C6F87CC1AF18C370055E8DF /* GMSpaceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F87CB1AF18C370055E8DF /* GMSpaceImageViewController.m */; };
 		2CA0F80E1AF0305200228E2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA0F80D1AF0305200228E2B /* Foundation.framework */; };
 		2CA0F8101AF0305200228E2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA0F80F1AF0305200228E2B /* CoreGraphics.framework */; };
 		2CA0F8121AF0305200228E2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA0F8111AF0305200228E2B /* UIKit.framework */; };
@@ -58,6 +59,8 @@
 		2C6F87BC1AF181CD0055E8DF /* Venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Venus.jpg; sourceTree = "<group>"; };
 		2C6F87C71AF181E10055E8DF /* GMSpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSpaceObject.h; sourceTree = "<group>"; };
 		2C6F87C81AF181E10055E8DF /* GMSpaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMSpaceObject.m; sourceTree = "<group>"; };
+		2C6F87CA1AF18C370055E8DF /* GMSpaceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSpaceImageViewController.h; sourceTree = "<group>"; };
+		2C6F87CB1AF18C370055E8DF /* GMSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMSpaceImageViewController.m; sourceTree = "<group>"; };
 		2CA0F80A1AF0305200228E2B /* Out of this World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of this World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA0F80D1AF0305200228E2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CA0F80F1AF0305200228E2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,6 +111,8 @@
 		2CA0F8011AF0305200228E2B = {
 			isa = PBXGroup;
 			children = (
+				2C6F87CA1AF18C370055E8DF /* GMSpaceImageViewController.h */,
+				2C6F87CB1AF18C370055E8DF /* GMSpaceImageViewController.m */,
 				2CA0F8131AF0305200228E2B /* Out of this World */,
 				2CA0F8321AF0305200228E2B /* Out of this WorldTests */,
 				2CA0F80C1AF0305200228E2B /* Frameworks */,
@@ -301,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6F87C91AF181E10055E8DF /* GMSpaceObject.m in Sources */,
+				2C6F87CC1AF18C370055E8DF /* GMSpaceImageViewController.m in Sources */,
 				2CA0F81E1AF0305200228E2B /* GMAppDelegate.m in Sources */,
 				2CA0F81A1AF0305200228E2B /* main.m in Sources */,
 				2CA0F8471AF0325800228E2B /* GMOuterSpaceTableViewController.m in Sources */,

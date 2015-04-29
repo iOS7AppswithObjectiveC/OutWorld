@@ -7,6 +7,8 @@
 //
 
 #import "GMOuterSpaceTableViewController.h"
+#import "AstronomicalData.h"
+#import "GMSpaceObject.h"
 
 @interface GMOuterSpaceTableViewController ()
 
@@ -31,16 +33,24 @@
     
     self.planets = [[NSMutableArray alloc] init];
     
-    NSString *planet1 = @"Mercury";
-    NSString *planet2 = @"Venus";
-    NSString *planet3 = @"Earth";
-    NSString *planet4 = @"Mars";
-    NSString *planet5 = @"Jupitor";
-    NSString *planet6 = @"Saturn";
-    NSString *planet7 = @"Uranus";
-    NSString *planet8 = @"Neptune";
+//    NSString *planet1 = @"Mercury";
+//    NSString *planet2 = @"Venus";
+//    NSString *planet3 = @"Earth";
+//    NSString *planet4 = @"Mars";
+//    NSString *planet5 = @"Jupiter";
+//    NSString *planet6 = @"Saturn";
+//    NSString *planet7 = @"Uranus";
+//    NSString *planet8 = @"Neptune";
     
-    self.planets = [[NSMutableArray alloc] initWithObjects:planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8, nil];
+    self.planets = [[NSMutableArray alloc] init];
+    
+    for (NSMutableDictionary *planetData in [AstronomicalData allKnownPlanets])
+    {
+        NSString *imageName = [NSString stringWithFormat:@"%@.jpg", planetData[PLANET_NAME]];
+        
+        GMSpaceObject *planet = [[GMSpaceObject alloc] initWithData:planetData andImage:[UIImage imageNamed:imageName]];
+        [self.planets addObject:planet];
+    }
     
 //    [self.planets addObject:planet1];
 //    [self.planets addObject:planet2];
@@ -92,13 +102,15 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.planets objectAtIndex:indexPath.row];
+    GMSpaceObject *planet = [self.planets objectAtIndex:indexPath.row];
+    cell.textLabel.text = planet.name;
+    cell.detailTextLabel.text = planet.nickname;
+    cell.imageView.image = planet.spaceImage;
     
-    if (indexPath.section == 0) {
-        cell.backgroundColor = [UIColor redColor];
-    } else {
-        cell.backgroundColor = [UIColor blueColor];
-    }
+    cell.backgroundColor = [UIColor clearColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha:1.0];
+    
     return cell;
 }
 
