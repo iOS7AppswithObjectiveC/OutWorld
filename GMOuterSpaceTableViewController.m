@@ -10,6 +10,7 @@
 #import "AstronomicalData.h"
 #import "GMSpaceObject.h"
 #import "GMSpaceImageViewController.h"
+#import "GMSpaceDataViewController.h"
 
 @interface GMOuterSpaceTableViewController ()
 
@@ -91,6 +92,16 @@
                  nextViewController.spaceObject = selectedObject;
              }
     }
+    if ([sender isKindOfClass:[NSIndexPath class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[GMSpaceDataViewController class]])
+        {
+            GMSpaceDataViewController *targetViewController = segue.destinationViewController;
+            NSIndexPath *path = sender;
+            GMSpaceObject *selectedObject = self.planets[path.row];
+            targetViewController.spaceObject = selectedObject;
+        }
+    }
 }
 - (void)didReceiveMemoryWarning
 {
@@ -129,5 +140,12 @@
     return cell;
 }
 
+
+#pragma  mark UITableView Delegate
+
+-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"pushToSpaceData" sender:indexPath];
+}
 
 @end
