@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1AE1591AF2DA1C00B5ADEA /* GMSpaceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1AE1581AF2DA1C00B5ADEA /* GMSpaceDataViewController.m */; };
 		2C6F87BD1AF181CD0055E8DF /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87B31AF181CD0055E8DF /* Earth.jpg */; };
 		2C6F87BE1AF181CD0055E8DF /* EinsteinRing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87B41AF181CD0055E8DF /* EinsteinRing.jpg */; };
 		2C6F87BF1AF181CD0055E8DF /* Jupiter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87B51AF181CD0055E8DF /* Jupiter.jpg */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1AE1571AF2DA1C00B5ADEA /* GMSpaceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSpaceDataViewController.h; sourceTree = "<group>"; };
+		2C1AE1581AF2DA1C00B5ADEA /* GMSpaceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMSpaceDataViewController.m; sourceTree = "<group>"; };
 		2C6F87B31AF181CD0055E8DF /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
 		2C6F87B41AF181CD0055E8DF /* EinsteinRing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EinsteinRing.jpg; sourceTree = "<group>"; };
 		2C6F87B51AF181CD0055E8DF /* Jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jupiter.jpg; sourceTree = "<group>"; };
@@ -59,8 +62,8 @@
 		2C6F87BC1AF181CD0055E8DF /* Venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Venus.jpg; sourceTree = "<group>"; };
 		2C6F87C71AF181E10055E8DF /* GMSpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSpaceObject.h; sourceTree = "<group>"; };
 		2C6F87C81AF181E10055E8DF /* GMSpaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMSpaceObject.m; sourceTree = "<group>"; };
-		2C6F87CA1AF18C370055E8DF /* GMSpaceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSpaceImageViewController.h; sourceTree = "<group>"; };
-		2C6F87CB1AF18C370055E8DF /* GMSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMSpaceImageViewController.m; sourceTree = "<group>"; };
+		2C6F87CA1AF18C370055E8DF /* GMSpaceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMSpaceImageViewController.h; path = ../GMSpaceImageViewController.h; sourceTree = "<group>"; };
+		2C6F87CB1AF18C370055E8DF /* GMSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMSpaceImageViewController.m; path = ../GMSpaceImageViewController.m; sourceTree = "<group>"; };
 		2CA0F80A1AF0305200228E2B /* Out of this World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of this World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA0F80D1AF0305200228E2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CA0F80F1AF0305200228E2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,8 +114,6 @@
 		2CA0F8011AF0305200228E2B = {
 			isa = PBXGroup;
 			children = (
-				2C6F87CA1AF18C370055E8DF /* GMSpaceImageViewController.h */,
-				2C6F87CB1AF18C370055E8DF /* GMSpaceImageViewController.m */,
 				2CA0F8131AF0305200228E2B /* Out of this World */,
 				2CA0F8321AF0305200228E2B /* Out of this WorldTests */,
 				2CA0F80C1AF0305200228E2B /* Frameworks */,
@@ -143,6 +144,8 @@
 		2CA0F8131AF0305200228E2B /* Out of this World */ = {
 			isa = PBXGroup;
 			children = (
+				2C6F87CA1AF18C370055E8DF /* GMSpaceImageViewController.h */,
+				2C6F87CB1AF18C370055E8DF /* GMSpaceImageViewController.m */,
 				2CA0F81C1AF0305200228E2B /* GMAppDelegate.h */,
 				2CA0F81D1AF0305200228E2B /* GMAppDelegate.m */,
 				2CA0F8451AF0325800228E2B /* GMOuterSpaceTableViewController.h */,
@@ -150,6 +153,8 @@
 				2C6F87C71AF181E10055E8DF /* GMSpaceObject.h */,
 				2C6F87C81AF181E10055E8DF /* GMSpaceObject.m */,
 				2CA0F81F1AF0305200228E2B /* Main.storyboard */,
+				2C1AE1571AF2DA1C00B5ADEA /* GMSpaceDataViewController.h */,
+				2C1AE1581AF2DA1C00B5ADEA /* GMSpaceDataViewController.m */,
 				2CA0F8251AF0305200228E2B /* Images.xcassets */,
 				2CA0F8141AF0305200228E2B /* Supporting Files */,
 			);
@@ -305,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1AE1591AF2DA1C00B5ADEA /* GMSpaceDataViewController.m in Sources */,
 				2C6F87C91AF181E10055E8DF /* GMSpaceObject.m in Sources */,
 				2C6F87CC1AF18C370055E8DF /* GMSpaceImageViewController.m in Sources */,
 				2CA0F81E1AF0305200228E2B /* GMAppDelegate.m in Sources */,

@@ -9,6 +9,7 @@
 #import "GMOuterSpaceTableViewController.h"
 #import "AstronomicalData.h"
 #import "GMSpaceObject.h"
+#import "GMSpaceImageViewController.h"
 
 @interface GMOuterSpaceTableViewController ()
 
@@ -72,11 +73,25 @@
 //    NSLog(@"%@", blueString);
     
     
-    NSNumber *myNumber = [NSNumber numberWithInt:5];
-    NSLog(@"%@", myNumber);
+//    NSNumber *myNumber = [NSNumber numberWithInt:5];
+//    NSLog(@"%@", myNumber);
     
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[GMSpaceImageViewController class]])
+             {
+                 GMSpaceImageViewController *nextViewController = segue.destinationViewController;
+                 NSIndexPath *path = [self.tableView indexPathForCell:sender];
+                 GMSpaceObject *selectedObject = self.planets[path.row];
+                 nextViewController.spaceObject = selectedObject;
+             }
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
