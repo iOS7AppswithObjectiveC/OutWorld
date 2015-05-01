@@ -7,8 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMSpaceObject.h"
+
+@protocol GMAddSpaceObjectViewControllerDelegate <NSObject>
+
+@required
+
+-(void)addSpaceObject:(GMSpaceObject *)spaceObject;;
+-(void)didCancel;
+
+
+@end
 
 @interface GMAddSpaceObjectViewController : UIViewController
+
+@property (weak, nonatomic) id <GMAddSpaceObjectViewControllerDelegate> delegate;
+
+
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *nicknameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *diameterTextField;

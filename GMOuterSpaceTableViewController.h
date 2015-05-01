@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMAddSpaceObjectViewController.h"
 
-@interface GMOuterSpaceTableViewController : UITableViewController
+@interface GMOuterSpaceTableViewController : UITableViewController <GMAddSpaceObjectViewControllerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *planets;
-@property (strong, nonatomic) NSMutableArray *addSpaceObjects;
+@property (strong, nonatomic) NSMutableArray *addedSpaceObjects;
 @end
