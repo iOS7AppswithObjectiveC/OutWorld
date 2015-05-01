@@ -11,5 +11,5 @@
 @interface GMOuterSpaceTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray *planets;
-
+@property (strong, nonatomic) NSMutableArray *addSpaceObjects;
 @end

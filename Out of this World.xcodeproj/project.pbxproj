@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C1AE1591AF2DA1C00B5ADEA /* GMSpaceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1AE1581AF2DA1C00B5ADEA /* GMSpaceDataViewController.m */; };
+		2C1AE15C1AF2E87A00B5ADEA /* GMAddSpaceObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1AE15B1AF2E87A00B5ADEA /* GMAddSpaceObjectViewController.m */; };
 		2C6F87BD1AF181CD0055E8DF /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87B31AF181CD0055E8DF /* Earth.jpg */; };
 		2C6F87BE1AF181CD0055E8DF /* EinsteinRing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87B41AF181CD0055E8DF /* EinsteinRing.jpg */; };
 		2C6F87BF1AF181CD0055E8DF /* Jupiter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F87B51AF181CD0055E8DF /* Jupiter.jpg */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		2C1AE1571AF2DA1C00B5ADEA /* GMSpaceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMSpaceDataViewController.h; sourceTree = "<group>"; };
 		2C1AE1581AF2DA1C00B5ADEA /* GMSpaceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMSpaceDataViewController.m; sourceTree = "<group>"; };
+		2C1AE15A1AF2E87A00B5ADEA /* GMAddSpaceObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMAddSpaceObjectViewController.h; sourceTree = "<group>"; };
+		2C1AE15B1AF2E87A00B5ADEA /* GMAddSpaceObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMAddSpaceObjectViewController.m; sourceTree = "<group>"; };
 		2C6F87B31AF181CD0055E8DF /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
 		2C6F87B41AF181CD0055E8DF /* EinsteinRing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EinsteinRing.jpg; sourceTree = "<group>"; };
 		2C6F87B51AF181CD0055E8DF /* Jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jupiter.jpg; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				2C6F87C71AF181E10055E8DF /* GMSpaceObject.h */,
 				2C6F87C81AF181E10055E8DF /* GMSpaceObject.m */,
 				2CA0F81F1AF0305200228E2B /* Main.storyboard */,
+				2C1AE15A1AF2E87A00B5ADEA /* GMAddSpaceObjectViewController.h */,
+				2C1AE15B1AF2E87A00B5ADEA /* GMAddSpaceObjectViewController.m */,
 				2C1AE1571AF2DA1C00B5ADEA /* GMSpaceDataViewController.h */,
 				2C1AE1581AF2DA1C00B5ADEA /* GMSpaceDataViewController.m */,
 				2CA0F8251AF0305200228E2B /* Images.xcassets */,
@@ -314,6 +319,7 @@
 				2C6F87C91AF181E10055E8DF /* GMSpaceObject.m in Sources */,
 				2C6F87CC1AF18C370055E8DF /* GMSpaceImageViewController.m in Sources */,
 				2CA0F81E1AF0305200228E2B /* GMAppDelegate.m in Sources */,
+				2C1AE15C1AF2E87A00B5ADEA /* GMAddSpaceObjectViewController.m in Sources */,
 				2CA0F81A1AF0305200228E2B /* main.m in Sources */,
 				2CA0F8471AF0325800228E2B /* GMOuterSpaceTableViewController.m in Sources */,
 				2CA0F84A1AF03EAE00228E2B /* AstronomicalData.m in Sources */,
